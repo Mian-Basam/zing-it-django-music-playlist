@@ -1,0 +1,31 @@
+{% extends "zing_it/base.html" %}
+{% load static %}
+
+{% block title %}Home | Zing It{% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'zing_it/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+  <section class="page-header">
+    <span class="eyebrow">Your library</span>
+    <h1>Playlists</h1>
+    <p>Hover over a playlist to see what's inside, then click it to view every song.</p>
+  </section>
+
+  <div class="playlist-grid">
+    {% for playlist in my_playlists %}
+      <a class="playlist-card" href="{% url 'playlist' playlist.id %}">
+        <div class="cover">
+          <img src="{% static 'zing_it/images/music.jpg' %}" alt="{{ playlist.name }} cover">
+          <span class="play-btn">▶</span>
+        </div>
+        <div class="details">
+          <h2>{{ playlist.name }}</h2>
+          <span>{{ playlist.numberOfSongs }} songs</span>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+{% endblock %}
