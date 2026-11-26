@@ -1,0 +1,12 @@
+{% extends "zing_it/base.html" %}
+
+{% block title %}Not found | Zing It{% endblock %}
+
+{% block content %}
+  <section class="page-header">
+    <span class="eyebrow">404</span>
+    <h1>This track skipped</h1>
+    <p>The page or playlist you're looking for doesn't exist.</p>
+  </section>
+  <a href="{% url 'home' %}" class="back-link">← Back to playlists</a>
+{% endblock %}
