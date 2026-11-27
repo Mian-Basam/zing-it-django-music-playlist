@@ -1,8 +1,40 @@
-# Building Zing It: A Music Playlist App with Django
+<div align="center">
 
-*By Mian Basam Ahmad*
+# Zing It
 
-![Zing It home page](screenshots/home.png)
+### A multi-page music playlist web app built step by step with Django
+
+![Python](https://img.shields.io/badge/Python-3-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-5-092E20?style=for-the-badge&logo=django&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+<img src="screenshots/home.png" alt="Zing It home page" width="92%" />
+
+</div>
+
+---
+
+<details>
+<summary><b>Table of contents</b></summary>
+
+- [Overview](#overview)
+- [TL;DR: Run it in 30 seconds](#tldr-run-it-in-30-seconds)
+- [Step 0: Understand the project layout](#step-0-understand-the-project-layout)
+- [Step 1: Render the home template](#step-1-render-the-home-template)
+- [Step 2: Display every playlist with the for tag](#step-2-display-every-playlist-with-the-for-tag)
+- [Step 3: Implement the playlist view (with a real 404)](#step-3-implement-the-playlist-view-with-a-real-404)
+- [Step 4: Configure the dynamic route](#step-4-configure-the-dynamic-route)
+- [Step 5: Build the songs template](#step-5-build-the-songs-template)
+- [Step 6: Link cards with the url tag](#step-6-link-cards-with-the-url-tag)
+- [Step 7: Create a base template](#step-7-create-a-base-template)
+- [Step 8: Extend the base in every page](#step-8-extend-the-base-in-every-page)
+- [Step 9: Serve your own cover art](#step-9-serve-your-own-cover-art)
+- [Going further: production-ready extras](#going-further-production-ready-extras)
+- [What we learned](#what-we-learned)
+
+</details>
+
+## Overview
 
 Every music app you've ever used, whether it's Spotify, Apple Music or YouTube Music, comes down to the same few pages: a library of playlists, a page for each playlist with its tracks, and a few static pages around them. That makes a playlist app a good first real project in Django. It's small enough to finish in an afternoon, and it uses nearly every core idea the framework is built on.
 
@@ -355,3 +387,15 @@ Happy building!
 ---
 
 *Based on the Educative guided project "Build a Music Playlist App Using Django."*
+
+---
+
+<div align="center">
+
+**Built by [Mian Basam Ahmad](https://github.com/Mian-Basam)** · Software Engineer & Tech Lead
+
+[![Blog](https://img.shields.io/badge/Blog-mian--basam.github.io-222222?style=flat-square&logo=githubpages&logoColor=white)](https://mian-basam.github.io) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mian-basam-ahmad-68b997147/) [![GitHub](https://img.shields.io/badge/GitHub-Mian--Basam-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Mian-Basam)
+
+<sub>If this project helped you, consider giving it a ⭐</sub>
+
+</div>
